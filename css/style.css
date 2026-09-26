@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -23,8 +24,160 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    gap: 35px;
 }
 
+/*** header début ***/
+header {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+h1 {
+    display: none;
+}
+.logoheader {
+    width: 61px;
+    height: 19px;
+    padding: 30px 0;
+    gap: 10px;
+    
+}
+menu {
+    display: flex;
+    gap: 68px; 
+    list-style: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+menu a:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+    padding: 21px 0;
+}
+/*** header fin ***/
+
+/*** section 1 début ***/
+.section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin: 0;
+}
+.sectiontitre {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.h2sectiontitre {
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0;
+    margin-bottom: 0;
+}
+.psectiontitre {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.icone1 {
+    width: 50px;
+}
+.formsectionrechercher{
+    max-width: 377px;
+    height: 49px;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    display: flex;
+    box-sizing: border-box;
+    gap: 24px;
+    color: #FFFFFF;
+}
+.saisiesectionrechercher {
+    border: none;
+    width: 195px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonsectionrechercher {
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    max-width: 132px;
+    padding: 15px 16px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+.formsectionrechercher button:hover {
+    background-color: #DEEBFF;
+    color: #0065FC;
+}
+.sectionfiltre {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.h3sectionfiltre {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: #000000;
+}
+.sectionfiltre button {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid #D9D9D9;
+    padding: 4px 19px;
+    gap: 10px;
+    background-color: #FFFFFF;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 100px;
+    letter-spacing: 0;
+    color: #000000;
+}
+.sectionfiltre button:hover {
+    background-color: #DEEBFF;
+}
+.sectioninformation {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 0;
+}
+.icone6 {
+    max-width: 24px;
+    max-height: 24px;
+}
+.psectioninformation {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+/*** section 1 fin ***/
 a {
     color: inherit;
     text-decoration: none;
@@ -66,7 +219,7 @@ a {
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 30px;
     box-sizing: border-box;
 }
@@ -74,8 +227,58 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
-
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hebergements-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.hebergements-cards article {
+    max-width: 250px;
+    max-height: 207px;
+}
+.hebergements-cards img {
+    width: 100%;
+    max-height: 124px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 0;
+}
+.hebergements-cards .card-txt {
+    padding: 0 15px;
+}
+.hebergements-cards .card-title {
+    margin: 5px 0;
+}
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+.hebergements-cards .card-rating {
+    padding: 0 15px;
+}
+.hebergements-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 8px;
+}
+.buttonhebergements button{
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+}
+.buttonhebergements :hover {
+    color: #0065FC;
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -90,6 +293,9 @@ a {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+}
+.populaires-cards div {
+    flex: 1;
 }
 
 .populaires-cards img {
@@ -119,10 +325,81 @@ a {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+    display: flex;
+    align-items: end;
+    padding-bottom: 5px;
 }
 
+/*** Activités à Marseille ***/
+.activites-a-marseille {
+    padding: 30px;
+    gap: 30px;
+}
+.articles-activites-a-marseille {
+    display: flex;
+    max-width: 1340px;
+    gap: 30px;
+    align-items: stretch;
+}
+.articles-activites-a-marseille a {
+    flex: 1;
+    display: flex;
+}
+.articles-activites-a-marseille article {
+    width: 100%;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    padding: 0;
 
+}
+.articles-activites-a-marseille img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    height: 380px;
+    display: block;
+}
+.articles-activites-a-marseille .card-title {
+    padding: 20px 19px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
 
+/*** footer début ***/
+.navfooter {
+    display: flex;
+    max-width: 1340px;
+    background-color: #F2F2F2;
+}
+.navfooter div {
+    flex: 1;
+    padding: 20px;
+}   
+.navfooter h3 {
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+.navfooter a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+.mepnavfooter {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.navfooter a:hover {
+    color: #0065FC;
+}
+/*** footer fin ***/
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
