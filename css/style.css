@@ -129,6 +129,19 @@ menu a:hover {
     background-color: #DEEBFF;
     color: #0065FC;
 }
+.buttonsectionrechercher i {
+    display: flex;
+    max-width: 49px;
+    max-height: 49px;
+    left: 286px;
+    padding: 15px 16px;
+    gap: 10px;
+    background-color: #0065FC;
+    color: #FFFFFF;
+    justify-content: center;
+    border-radius: 15px;
+}
+
 .sectionfiltre {
     display: flex;
     align-items: center;
@@ -409,11 +422,19 @@ a {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+@media (max-width: 1440px) {
+    .buttonsectionrechercher i {
+        display: none;
+    }
+}
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .sectionfiltre {
         flex-direction: column;
         align-items: flex-start;
+    }
+    .buttonsectionrechercher i {
+        display: none;
     }
     .filtres-buttons button {
         font-size: 16px;
@@ -465,12 +486,22 @@ a {
         padding: 0;
     }
     menu a:hover {
-    border-top: none;
-    border-bottom: 2px solid #0065FC;
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
     }
-
+    .buttonsectionrechercher span {
+        display: none;
+    }
+    .buttonsectionrechercher {
+        background-color: transparent;
+        border: none;
+    }
+    .buttonsectionrechercher i {
+        display: flex;
+        align-items: center;
+    }
     .hebergements-cards {
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
     .hebergements-cards article {
         max-width: none;
@@ -484,7 +515,7 @@ a {
     }
 
     .articles-activites-a-marseille {
-    flex-direction: column;
+        flex-direction: column;
 }
     .navfooter {
         flex-direction: column;
