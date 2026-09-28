@@ -453,5 +453,41 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    
+    header {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 30px;
+        gap: 0;
+    }
+    menu {
+        margin: 0;
+        padding: 0;
+    }
+    menu a:hover {
+    border-top: none;
+    border-bottom: 2px solid #0065FC;
+    }
+
+    .hebergements-cards {
+    grid-template-columns: 1fr;
+    }
+    .hebergements-cards article {
+        max-width: none;
+    }
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .articles-activites-a-marseille {
+    flex-direction: column;
 }
+    .navfooter {
+        flex-direction: column;
+    }
+}
+
