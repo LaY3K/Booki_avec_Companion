@@ -476,6 +476,17 @@ a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+   .articles-activites-a-marseille article {
+        width: 100%;
+    }
+    .articles-activites-a-marseille img {
+        object-fit: cover;
+        height: 200px;
+        display: block;
+    }
+    .articles-activites-a-marseille article {
+        height: auto;
+}
 }
 
 /* Small devices (phones, less than 768px) */
@@ -525,6 +536,27 @@ a {
 }
     .navfooter {
         flex-direction: column;
+    }.section1 {
+        padding: 0 20px;
     }
+    .main-container {
+        padding: 0;
+        box-sizing: border-box;
+    }
+   body {
+    margin: 0;
+   }
+   .hebergements-and-populaires .hebergements {
+    background-color: #FFFFFF;
+   }
+   .hebergements-and-populaires button {
+    background-color: #FFFFFF;
+   }
+   .hebergements-and-populaires .populaires {
+    background-color: #F2F2F2;
+   }
+   .hebergements-and-populaires {
+    flex-direction: column-reverse;
+   }
 }
 
