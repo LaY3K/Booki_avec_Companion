@@ -558,5 +558,9 @@ a {
    .hebergements-and-populaires {
     flex-direction: column-reverse;
    }
+   .articles-activites-a-marseille img {
+        object-fit: cover;
+        height: 141px;
+        display: block;
 }
-
+}
