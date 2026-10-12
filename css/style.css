@@ -129,6 +129,7 @@ header {
     background-color: var(--main-color);
     color: #FFFFFF;
     border-radius: 15px;
+    display: none;
 }
 
 .filters {
@@ -401,11 +402,7 @@ a {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-@media (max-width: 1440px) {
-    .search-button i {
-        display: none;
-    }
-}
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .filters {
